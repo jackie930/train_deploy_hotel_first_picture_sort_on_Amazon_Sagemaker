@@ -150,11 +150,11 @@ def main(first_page_data_path, total_data_path, category_data_path, negative_sam
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--first_page_data_path', type=str, default='../klook_data/酒店首图.xlsx')
-    parser.add_argument('--total_data_path', type=str, default='../klook_data/酒店全量图片.xls')
-    parser.add_argument('--category_data_path', type=str, default='../klook_data/category_predict.txt')
+    parser.add_argument('--first_page_data_path', type=str, default='../酒店首图.xlsx')
+    parser.add_argument('--total_data_path', type=str, default='../酒店全量图片.xls')
+    parser.add_argument('--category_data_path', type=str, default='../category_predict.txt')
     parser.add_argument('--negative_sample_number_per_category', type=int, default=100)
-    parser.add_argument('--output_folder', type=str, default='../klook_data')
+    parser.add_argument('--output_folder', type=str, default='../')
     args = parser.parse_args()
     main(args.first_page_data_path, args.total_data_path, args.category_data_path,
          args.negative_sample_number_per_category, args.output_folder)
