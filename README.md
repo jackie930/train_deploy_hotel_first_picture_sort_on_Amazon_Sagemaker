@@ -13,6 +13,6 @@ train and deploy hotel first picture sort on amazon sagemaker
 
 follow train/train.ipynb
 
-## deploy the trained model as sagemaker endpoint which support VLLM (optional)
+## deploy the trained model as sagemaker endpoint 
 
 follow deploy/first-pic-sagemaker-endpoint.ipynb
